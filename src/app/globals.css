@@ -11,6 +11,34 @@ body{
 .chngeDir:last-child .boogi:last-child{
   background-color: transparent;
 }
+.slick-slide img{
+  filter: grayscale(100%) ;
+  opacity: .5;
+}
+.slick-slide.slick-current img{
+  filter: grayscale(0%) contrast(96%) saturate(180%) brightness(90%);
+  opacity: 1;
+}
+
+.respon{
+ display: block !important;
+ position: absolute;
+ right: 0;
+ padding-right: 5%;
+ text-align: right;
+ transition: all .3s ease-in-out;
+ width: 100%;
+ top: 60px;
+ padding-block: 10px;
+ height: max-content;
+ background-color: #fff;
+ display: flex !important;
+ flex-direction: column;
+}
+.respon a{
+  font-size: 1rem;
+  margin-block-end: 5px;
+}
 
 @media screen and (max-width:1020px){
 

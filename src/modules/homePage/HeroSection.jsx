@@ -11,7 +11,7 @@ const hero = {
 
 const HeroSection = () => {
   return (
-    <HeroSect title={hero.title} h={hero.h} align='start' src={hero.src} subtitle={hero.subtitle} />
+    <HeroSect {...hero} />
   );
 }
 
