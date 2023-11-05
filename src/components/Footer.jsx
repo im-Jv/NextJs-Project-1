@@ -59,7 +59,7 @@ const contactUs = [
 const Footer = () => {
   return (
     <>
-    <Box as='footer' py="20px" px={{base:'40px', lg:'38px'}} borderBlock="1px" borderColor="#d4d4d4">
+    <Box as='footer' py="20px" px={{base:'40px', lg:'8%'}} borderBlock="1px" borderColor="#d4d4d4">
       <Flex maxW={{lg:'1446px', base:'100%'}} mx='auto' h='max-content' py='2em' align='flex-start' justify="space-between" mt='20px' flexDir="column">
         <Image src='/logo.jpeg' h='3.5rem' w='max-content' objectFit='contain' alt='logo' mb="1rem" />
         <Box display="flex" flexWrap="wrap">

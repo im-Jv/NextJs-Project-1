@@ -7,23 +7,23 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 const topNav = [
   {
     title: 'Web Development',
-    tLink: '/'
+    tLink: '/services/web-development'
   },
   {
     title: 'App Development',
-    tLink: '/'
+    tLink: '/services/app-development'
   },
   {
     title: 'Digital Marketing',
-    tLink: '/'
+    tLink: '/services/digital-marketing'
   },
   {
     title: 'SEO',
-    tLink: '/'
+    tLink: '/services/seo'
   },
   {
     title: 'Graphic Designing',
-    tLink: '/'
+    tLink: '/services/graphic-designing'
   },
 ];
 
