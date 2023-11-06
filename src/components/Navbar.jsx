@@ -1,7 +1,8 @@
 'use client';
-
-import { Link, Image, Flex, Box } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
+import Link from 'next/link';
+import { Image, Flex, Box } from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 
@@ -30,17 +31,23 @@ const topNav = [
 
 const Navbar = () => {
   const [navM, setNavM] = useState();
+  const path = usePathname();
   return (
-    <Box as='nav' px='8%'>
+    <Box as='nav' px={{md:'8.5%', base:'40px'}} zIndex='999' position='fixed' top='0' w='100%' bgColor='white'>
       <Flex justify='space-between' py='1rem' align='center' maxW={{ lg: '1446px', base: '100%' }} mx='auto'>
-        <Link href='/' me='8%'>
-          <Image src='/logo.jpeg' alt='iT Company' h='42px' objectFit='contain' />
+        <Link href='/' >
+          <Image src='/logo.jpeg' alt='iT Company' h='48.5px' objectFit='contain' />
         </Link>
-        <HamburgerIcon cursor='pointer' display={{ md: 'none', base: 'block' }} onClick={() => setNavM(!navM)} />
-        <Box className={navM ? 'respon' : ''} fontSize='1rem' fontWeight='600' hideBelow="md">
-          {topNav.map((lnk, index) => {
-            return (<Link _hover={{ color: '#24a9e1' }} textDecor='none' key={index} fontSize={{ lg: '1rem', base: '.5rem' }} fontWeight='600' href={lnk.tLink} color='#4d648a' mx='1rem'>{lnk.title}</Link>);
-          })}
+        <Box cursor='pointer' display={{ md: 'none', base: 'block' }} onClick={() => setNavM(!navM)}>
+          {!navM ? <HamburgerIcon fontSize='lg' /> : <CloseIcon /> }
+        </Box>
+        <Box className={navM ? 'respon' : ''} textDecor='none' fontSize={{ lg: '16px', base: '14px' }} onClick={() => setNavM(!navM)} w='80%' fontWeight='600' hideBelow="md">
+          <Flex justify='space-between'>
+            {topNav.map((lnk, i) => {
+              let lnki = lnk.tLink;
+              return (<Link className={path === lnki ? 'active' : ''} key={i} href={lnki}>{lnk.title}</Link>);
+            })}
+          </Flex>
         </Box>
       </Flex>
     </Box>

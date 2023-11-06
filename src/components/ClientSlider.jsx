@@ -9,6 +9,8 @@ import {Box, Flex, Image, Text} from '@chakra-ui/react'
 const clints = [
   '/assets/parinda.png',
   '/assets/alphaStore.png',
+  '/assets/bsa.png',
+  '/assets/skin-shop.png',
   '/assets/CHD.png',
   '/assets/yep.png',
 ]
@@ -20,18 +22,32 @@ export default function SimpleSlider() {
       autoplay: true,
       pauseOnHover:false,
       speed: 500,
-      slidesToShow: 2.3,
+      slidesToShow: 5,
       slidesToScroll: 1,
-
+      responsive: [
+        {
+          breakpoint: 830,
+          settings: {
+            slidesToShow: 2.85,
+            centerMode: true,
+          }
+        },
+        {
+          breakpoint: 530,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     };
     return (
-      <Box maxW='1440px' mx='auto' my='50px'>
+      <Box maxW='1440px' mx='auto' my='7rem'>
         <Box w='100%'>
-          <Slider centerMode {...settings}>
+          <Slider className="client" {...settings}>
               {clints.map((c,i)=>{
                 return (
-                  <Flex key={i} w='max-content' p='20px'>
-                    <Image src={c} alt='img' h='100px' p='20px' w='250px' mx='auto' objectFit='contain' />
+                  <Flex key={i} w='100%' ms='20px'>
+                    <Image src={c} alt='img' w={{md:'100px', base:'100%'}} h='70px' objectFit='contain' />
                   </Flex>
                 )
               })}

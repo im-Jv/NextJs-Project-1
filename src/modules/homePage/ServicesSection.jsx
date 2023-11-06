@@ -45,15 +45,13 @@ const servicContent = [
 
 const ServicesSection = () => {
   return (
-    <Box as='section' w="100%" px={{base:'40px', lg:'8%'}} py="24px">
+    <Box as='section' w="100%" px={{base:'40px', lg:'8.5%'}} py="3rem">
       <Text textAlign="center" color="#244395" fontSize={{md:"2.5rem", base:'32px'}} fontWeight='500'>Services</Text>
       <Text textAlign="center" color="#33333" fontSize={{md:"1.6rem", base:'18px'}}>Select a service to see what we offer</Text>
       <Box  maxW="1446px" mx="auto" my="48px">
         {servicContent.map((sc, i)=>{
           return <TimelineSect key={i} rvrs={sc.sDir} sorce={sc.sSrc} slink={sc.sLink} sDescp={sc.sDescp} stitle={sc.stitle} />
-        })
-
-        }
+        })}
       </Box>
     </Box>
   );
