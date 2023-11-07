@@ -72,43 +72,40 @@ const Footer = () => {
           bg.style.backgroundPositionY = (-e.pageY) / 10 + 'px';
         })
       }}>
-        <Flex maxW={{ lg: '1446px', base: '100%' }} mx='auto' h={{ lg: '360px', base: 'max-content' }} py='1rem' align='flex-start' justify="space-between" mt='20px' flexDir="column">
+        <Flex maxW={{ lg: '1446px', base: '100%' }} mx='auto' h={{ lg: '336px', base: 'max-content' }} align='flex-start' justify="center" mt='20px' flexDir="column">
           <Image src='/logo.jpeg' h='3.5rem' w='max-content' objectFit='contain' alt='logo' mb="1rem" />
           <Box display="flex" flexWrap="wrap">
-            <Flex w={{ lg: '35%', base: '100%' }} flexDir='column' justify='start' fontSize='.8rem'>
-              <Text mb=".6rem" fontWeight='900' fontSize='20px' textTransform='uppercase' color='transparent' visibility='hidden'>About</Text>
-              <Text fontFamily='text.100' fontSize={{ lg: '18px', base: '16px' }} pe='1rem'>
+            <Flex w={{ lg: '34%', base: '100%' }} flexDir='column' justify='start' fontSize='.8rem'>
+              <Text mb=".6rem" fontWeight='900' fontSize='16px' textTransform='uppercase' color='transparent' visibility='hidden' hideBelow='lg'>About</Text>
+              <Text fontFamily='text.100' fontSize={{ lg: '20px', base: '18px' }} pe='1rem'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </Text>
-              <Text fontWeight='700' fontSize='1rem' my={{ lg: "1.8rem", base: '.8rem' }} color='#244395'>Get the Latest News & Update</Text>
+              <Text fontWeight='700' fontSize='1rem' my={{ lg: "1rem", base: '.8rem' }} color='#244395'>Get the Latest News & Update</Text>
               <Flex as='form' action="" justify="space-between" gap="10%" mb=".9rem">
                 <Input type='email' w="70%" size="base" placeholder='Email' borderRadius='5px' p='.7rem' borderWidth='1px' />
                 <Input w="30%" type='submit' size="base" value='Send' borderRadius='5px' border='0' bgColor='#244395' me="15px" color='white' fontWeight='500' />
               </Flex>
             </Flex>
-            <Flex w={{ lg: '20%', base: '40%' }} flexDir='column' fontSize='1rem'>
+            <Flex w={{ lg: '21%', base: '50%' }} ps='10px' flexDir='column' fontSize='1rem'>
               <Text mb=".6rem" fontWeight='900' fontSize='20px' textTransform='uppercase' color='primary.100' fontFamily='text.200'>Quick Links</Text>
               {qLink.map((ql, i) => {
                 let lnki = ql.link;
                 return <Link className={path === lnki ? 'active' : ''} key={i} href={ql.link}>{ql.lname}</Link>
-              })
-              }
+              })}
             </Flex>
-            <Flex w={{ lg: '20%', base: '55%' }} flexWrap="wrap" flexDir='column' fontSize='1rem'>
+            <Flex w={{ lg: '20%', base: '50%' }} ps='10px' flexWrap="wrap" flexDir='column' fontSize='1rem'>
               <Text mb=".6rem" fontWeight='900' fontSize='20px' textTransform='uppercase' color='primary.100' fontFamily='text.200'>Our Services</Text>
               {servicess.map((ql, i) => {
                 let lnki = ql.link;
                 return <Link className={path === lnki ? 'active' : ''} key={i} href={ql.link}>{ql.lname}</Link>
-              })
-              }
+              })}
             </Flex>
-            <Flex w={{ lg: '20%', base: '100%' }} flexDir='column' fontSize='1rem'>
+            <Flex w={{ lg: '25%', base: '100%' }} flexDir='column' fontSize='14px'>
               <Text mb=".6rem" fontWeight='900' fontSize='20px' textTransform='uppercase' color='primary.100' fontFamily='text.200'>Contact Us</Text>
               {contactUs.map((ql, i) => {
                 let lnki = ql.link;
                 return <Link className={path === lnki ? 'active' : ''} key={i} href={ql.link}>{ql.lname}</Link>
-              })
-              }
+              })}
             </Flex>
           </Box>
         </Flex>

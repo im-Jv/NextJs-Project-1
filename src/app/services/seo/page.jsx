@@ -4,42 +4,41 @@ import ServiceSect from '@/modules/servicePage/ServiceSect'
 
 const whero = {
   title:'SEO',
-  subtitle:' Our expert team combines design and functionality to create visually stunning and highly effective websites. We offer tailor-made solutions that ensure your online presence is engaging and capable of driving business growth. Whether it’s a responsive website, e-commerce platform, or a custom web application, we’re dedicated to delivering innovative, reliable, and user-friendly digital solutions that make an impact.',
+  subtitle:'Our expert team combines design and functionality to create visually stunning and highly effective websites. We offer tailor-made solutions that ensure your online presence is engaging and capable of driving business growth. Whether it’s a responsive website, e-commerce platform, or a custom web application, we’re dedicated to delivering innovative, reliable, and user-friendly digital solutions that make an impact.',
   src:'/assets/seo.jpg',
-  h:'460px',
   align:'center'
 }
 const webService = {
   serviceName:'SEO',
   serviceData: [
     {
-      title:'Front-end Development',
-      src:'',
-      descp:'Mastering front-end development for user-centric innovation.'
+      title:'Technical SEO',
+      src:'/assets/icons/frontW.png',
+      descp:'Mastering Technical SEO for user-centric innovation.'
     },
     {
-      title:'Back-end Development',
-      src:'',
-      descp:'We develop back-end solutions that are extensible, scalable, and easy to maintain.'
+      title:'Content Writing',
+      src:'/assets/icons/backW.png',
+      descp:'We develop Content solutions that are extensible, scalable, and easy to maintain.'
     },
     {
-      title:'Full Stack Development',
-      src:'',
+      title:'On-Page & Off-Page SEO',
+      src:'/assets/icons/codeW.png',
       descp:'We provide full-spectrum SEO for the simple to high-performing back-end.'
     },
     {
-      title:'WordPress Development',
-      src:'',
+      title:'Competitor Analysis',
+      src:'/assets/icons/WPw.png',
       descp:'Excels in e-commerce site development, including WordPress-powered stores.'
     },
     {
-      title:'Web App Development',
-      src:'',
+      title:'SEO Audit',
+      src:'/assets/icons/mob.png',
       descp:'We also builds web apps. We also provide services to maintain and update the app to fix bugs.'
     },
     {
-      title:'Web Designing',
-      src:'',
+      title:'Panelty Recovery',
+      src:'/assets/icons/brushW.png',
       descp:'Our expertise in web design ensures a delightful user experience.'
     },
   ],
@@ -48,6 +47,9 @@ const webService = {
 const Page = () => {
   return (
     <>
+    <head>
+      <title>SEO - IT Company</title>
+    </head>
       <HeroSection hero={whero}/>
       <ServiceSect {...webService}/>
     </>

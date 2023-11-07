@@ -56,6 +56,8 @@ footer a {
   color: #4d648a;
   font-weight: 600;
   margin-right: .7rem;
+  word-wrap: nowrap;
+  text-wrap: nowrap;
   font-family: 'Poppins', sans-serif;
 }
 nav a:hover,

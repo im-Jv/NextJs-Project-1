@@ -2,7 +2,6 @@
 
 import { ChakraBaseProvider, extendBaseTheme } from '@chakra-ui/react';
 import React from 'react';
-import fonts from '@/components/Fonts'
 
 const theme = extendBaseTheme({
   colors: {

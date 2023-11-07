@@ -4,14 +4,14 @@ import React from 'react';
 const VisionSection = () => {
     return (
         <Flex as='section' align='center' bgImage='/assets/heroBg.jpeg' bgAttachment='fixed' bgSize='cover' bgPos='bottom' bgBlendMode='darken' bgColor='#0000009a' bgRepeat='no-repeat' px='8.5%'>
-            <Flex justifyContent='space-evenly' h='530px' py='30px' flexDir='column' maxW='1446px' mx='auto' color='white' fontFamily='heading.100'>
+            <Flex justifyContent='space-evenly' h='490px' py='30px' flexDir='column' maxW='1446px' mx='auto' color='white' fontFamily='heading.100'>
                 <Box>
-                    <Text fontSize={{ md: '3.2rem', base: '32px' }} fontWeight='500'>Our Vision</Text>
-                    <Text fontSize={{ md: '1.3rem', base: '16px' }} mb={{ md: '0', base: '20px' }}>DEMO IT SOLUTIONS technology to revolutionize businesses by promoting growth, efficiency, and creativity. We want to be the catalyst that connects goals and accomplishments.</Text>
+                    <Text lineHeight='80px' fontSize={{ md: '40px', base: '32px' }} fontWeight='500'>Our Vision</Text>
+                    <Text lineHeight='36px' fontSize={{ md: '20px', base: '16px' }}>DEMO IT SOLUTIONS technology to revolutionize businesses by promoting growth, efficiency, and creativity. We want to be the catalyst that connects goals and accomplishments.</Text>
                 </Box>
                 <Box>
-                    <Text fontSize={{ md: '3.2rem', base: '32px' }} mb='0' fontWeight='500'>Our Mission</Text>
-                    <Text fontSize={{ md: '1.3rem', base: '16px' }}>DEMO IT SOLUTIONS mission is to deliver cutting-edge solutions and drive growth as trusted digital partners. Navigating digital landscapes and exceeding expectations with tailored solutions is our forte.</Text>
+                    <Text lineHeight='80px' fontSize={{ md: '40px', base: '32px' }} fontWeight='500'>Our Mission</Text>
+                    <Text lineHeight='36px' fontSize={{ md: '20px', base: '16px' }}>DEMO IT SOLUTIONS mission is to deliver cutting-edge solutions and drive growth as trusted digital partners. Navigating digital landscapes and exceeding expectations with tailored solutions is our forte.</Text>
                 </Box>
             </Flex>
         </Flex>

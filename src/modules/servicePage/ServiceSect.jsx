@@ -3,7 +3,7 @@
 import React from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick-theme.css';
 
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 
@@ -36,7 +36,7 @@ const ServiceSect = ({ serviceName, serviceData }) => {
   return (
     <Box as="section" width='100%' px={{ base: '40px', lg: '8.5%' }}>
       <Box maxW='1446px' mx='auto' my='3rem'>
-        <Text textAlign='center' fontWeight='500' my='2rem' fontSize={{ md: '2.6rem', base: '32px' }} color='primary.100'>Our {serviceName} Services</Text>
+        <Text textAlign='center' fontWeight='500' my='2rem' fontSize={{ md: '40px', base: '32px' }} color='primary.100'>Our {serviceName} Services</Text>
         <Box h='max-content' ms='50px'>
           <Slider {...settings} cssEase="ease-in-out">
             {serviceData.map((s, i) => {
@@ -46,7 +46,7 @@ const ServiceSect = ({ serviceName, serviceData }) => {
                     <Box bgColor='primary.100' p='.8rem' mb='1rem' borderRadius='50%' h='3.5rem' w='3.5rem'>
                       <Image alt="img" src={s.src} />
                     </Box>
-                    <Text color='primary.100' width='80%' mx='auto' fontSize='1.3rem' fontWeight='500' >{s.title}
+                    <Text color='primary.100' width='80%' mx='auto' fontSize='24px' fontWeight='600' fontFamily='text.100'>{s.title}
                       <Box width='2rem' h='4px' my='1rem' mx='auto' bgColor='#CCCCCC'></Box>
                     </Text>
                     <Text>{s.descp}</Text>

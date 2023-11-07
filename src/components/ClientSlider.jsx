@@ -28,8 +28,7 @@ export default function SimpleSlider() {
         {
           breakpoint: 830,
           settings: {
-            slidesToShow: 2.85,
-            centerMode: true,
+            slidesToShow: 2,
           }
         },
         {
