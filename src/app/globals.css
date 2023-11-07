@@ -1,23 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700;800&display=swap');
 
-*{
-  font-family: 'Poppins', sans-serif;
-}
 html,
 body{
   width: 100%;
 }
-
 .chngeDir:last-child .boogi:last-child{
   background-color: transparent;
 }
+.client .slick-slide img{
+  filter: grayscale(100%) ;
+  opacity: .5;
+}
+.client .slick-track{
+  margin-left: -20px;
+}
+.client .slick-slide.slick-current img{
+  filter: grayscale(0%) contrast(70%) saturate(200%) brightness(86%);
+  opacity: 1;
+}
+.respon{
+ display: block !important;
+ height: 100vh;
+ background-color: rgba(3, 3, 3, 0.723);
+ position: absolute;
+ right: 0;
+ top: 60px;
+ width: 100% !important;
+
+}
+.respon > div {
+  padding-right: 5%;
+  text-align: right;
+  transition: all .3s ease-in-out;
+  padding-block: 10px;
+  height: max-content;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.respon a{
+  font-size: 1rem;
+  margin-block-end: 5px;
+}
+nav a,
+footer a {
+  color: #4d648a;
+  font-weight: 600;
+  margin-right: .7rem;
+  word-wrap: nowrap;
+  text-wrap: nowrap;
+  font-family: 'Poppins', sans-serif;
+}
+nav a:hover,
+nav > div a.active,
+footer a:hover,
+footer > div a.active{
+  color: #24a9e1 !important;
+}
 
 @media screen and (max-width:1020px){
-
   .chngeDir{
     flex-direction: row-reverse !important;
   }
   .boxclr{
     background-color: #052240 !important;
+    margin-left: 15px !important;
+    margin-right: -15px !important;
   }
 }
