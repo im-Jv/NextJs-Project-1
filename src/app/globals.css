@@ -2,14 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700;800&display=swap');
 
-/* *{
-  font-family: 'Poppins', sans-serif;
-} */
 html,
 body{
   width: 100%;
 }
-
 .chngeDir:last-child .boogi:last-child{
   background-color: transparent;
 }
@@ -19,13 +15,11 @@ body{
 }
 .client .slick-track{
   margin-left: -20px;
-  /* background-color: red; */
 }
 .client .slick-slide.slick-current img{
   filter: grayscale(0%) contrast(70%) saturate(200%) brightness(86%);
   opacity: 1;
 }
-
 .respon{
  display: block !important;
  height: 100vh;
@@ -68,7 +62,6 @@ footer > div a.active{
 }
 
 @media screen and (max-width:1020px){
-
   .chngeDir{
     flex-direction: row-reverse !important;
   }
@@ -76,6 +69,5 @@ footer > div a.active{
     background-color: #052240 !important;
     margin-left: 15px !important;
     margin-right: -15px !important;
-
   }
 }

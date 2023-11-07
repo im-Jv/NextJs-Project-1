@@ -1,4 +1,5 @@
 'use client';
+
 import Link from 'next/link';
 import { Image, Flex, Box } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
